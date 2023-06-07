@@ -30,7 +30,7 @@ print("2. Top 3 currency by the total numerical value of trades " \
     +"in that currency ")
 
 combined = df.groupby('currency').agg({'value':sum})
-combined.sort_values("value", ascending=False)["value"].head(3)
+print(combined.sort_values("value", ascending=False)["value"].head(3))
 print(" ")
 print(" ")
 
